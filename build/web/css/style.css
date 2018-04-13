@@ -1,0 +1,605 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-image: url('../images/3.jpg');
+    background-size: cover;
+    width: 100%;
+    height:100%;
+}
+
+#main{
+    margin-top: 10px;
+}
+.head {
+    width: 100%;
+    height: 150px;
+    background: #666699;
+    border-bottom: 1px solid black;
+}
+.head p{
+    color: black;
+    font-size: 23px;
+    text-align: center;
+    font-family: serif;
+    padding-top:15px;
+    padding-left: 20%;
+}
+.head t{
+    float: right;
+}
+.head button{
+    float: left;
+    margin-top: 1px;
+    width: 100px;
+    height: 30px;
+    background: #FFFFFF;
+    cursor: pointer;
+    font-size: 17px;
+}
+#search{
+    float: right;
+    padding-right:500px;
+    padding-top: 105px;
+}
+#search input{
+    height: 40px;
+    border: 1px solid #666699;
+    direction: rtl;
+    width: 270px;
+}
+#search button{
+    width: 60px;
+    height: 40px;
+    border: 1px solid #666699;
+    background-color: #449d44;
+}
+
+/* /////////////////// home ///////  */
+.ser{
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    float:right;
+    border-radius: 15px;
+    direction: rtl;
+
+
+}
+.ser input[type=text]:focus {
+    background-color: #ccc69f;
+
+}
+.ser button{
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #ad2b65;
+    color: white;
+    box-sizing: content-box;
+    cursor: pointer;
+    animation-duration: 0.8s;
+}
+#slider{
+    width: 100%;
+    height: auto;
+
+}
+#imgs img 
+{
+    /*overlays all the imgs */
+    /*You see only the first img, for now*/
+    width:80%;
+    height:80%;
+    position:absolute;
+    top:200px;
+    left: 143px;
+    border-radius: 10px;
+    transition: 1s;
+    visibility:hidden;
+    /*we want to show only 1 img at the time*/
+}
+/*the container */
+#Snav 
+{
+    display:block;
+    width:80%;
+    height:80%;
+    position:absolute;
+    top:250px;
+    left:143px;
+}
+/* where the circles are going to be*/
+#SnavUp 
+{
+    display:block;
+    width:100%;
+    height:20%;
+}
+#Scircles 
+{
+    display:block;
+    width:5%;
+    height:15%;
+    margin-right:5%;
+    margin-top:2%;
+    float:right;        /* is going to be on the right side of the slider*/
+}
+#Scircles ul 
+{
+    margin:0;
+    float:right;
+    display:block;
+    width:100%;
+    height:100%;
+}
+#Scircles li
+{
+    /*we don't need the dots*/
+    list-style:none;
+    display:block;
+    background-color:rgba(0, 0, 0, 1);
+    width:25%;
+    height:90%;
+    margin-left:5%;
+    float:left;     /*on the same line*/
+    visibility:hidden;
+    /*we need circles, not squares*/
+    border-bottom-left-radius:25px;
+    border-top-left-radius:25px;
+    border-bottom-right-radius:25px;
+    border-top-right-radius:25px;
+
+}
+/*ok , we are done with the SnavUp*/
+#SnavMiddle 
+{
+    display:block;
+    width:100%;
+    height:15%;
+    margin-top:10%;     /*this is up to you , where you want the buttons*/
+}
+/*left button*/
+#Sleft 
+{
+    width:6%;
+    height:80%;
+    float:left;
+    margin-left:0%;
+
+    opacity:0.8;
+}
+/*button effect*/
+#Sleft:hover 
+{
+    opacity:0.8;
+}
+#Sright 
+{
+    width:6%;
+    height:80%;
+    float:right;
+    margin-right:0%;
+    opacity:0.8;
+}
+#Sright:hover 
+{
+    opacity:0.8;
+}
+/*now we have to add the info at the bottom of the slider*/
+#SnavBottom 
+{
+    display:block;
+    background-color:rgba(0, 0, 0, 0.8);
+    width:100%;
+    height:10%;
+    position:absolute;
+    bottom:0;
+
+    border-radius: 10px;
+}
+#SnavBottom p 
+{
+    font:normal 200% Arial;
+    color:#fff;
+    position:absolute;
+    float: right;
+    margin-top:5px;
+
+    margin-left:80%;
+    visibility:hidden;
+}
+/* ///////// client /////////////*/
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 50px;
+    margin-right: 20%;
+    text-decoration: none;
+    font-size: 19px;
+}
+.topnav a:hover {
+
+    color: red;
+
+}
+
+.topnav a.active {
+
+    color: white;
+}
+/* ////////////////// report /////////////////////////////*/
+.tab1 h1{
+    float: right;
+    padding-left: 28%;
+    font-size: 19px; 
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+
+/* //////////////// index ////////////////////*/
+#body{
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/back.jpg');
+    background-size: cover;
+}
+.byline span {
+    animation: spin-letters 5s linear infinite;
+}
+.byline {
+    animation: move-byline 5s linear infinite;
+}
+.byline {
+    color: #fff;
+    font-size: 2.25em;
+    left: -2em;
+    right: -2em;
+    top: 29%;
+}
+.byline span {
+    display: inline-block;
+}
+@keyframes wars {
+    0% {
+        opacity: 0;
+        transform: scale(1.5) translateY(0.5em);
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateZ(-1000em);
+    }
+}
+.star {
+    animation: star 10s ease-out infinite;
+}
+.wars {
+    animation: wars 10s ease-out infinite;
+}
+@keyframes star {
+    0% {
+        opacity: 0;
+        transform: scale(1.5) translateY(-0.75em);
+    }
+    20% {
+        opacity: 1;
+    }
+    89% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateZ(-1000em);
+    }
+}
+@keyframes spin-letters {
+    0%, 10% {
+        opacity: 0;
+        transform: rotateY(90deg);
+    }
+    30% {
+        opacity: 1;
+    }
+    70%, 86% {
+        transform: rotateY(0);
+        opacity: 1;
+    }
+    95%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes move-byline {
+    0% {
+        transform: translateZ(5em);
+    }
+    100% {
+        transform: translateZ(0);
+    }
+}
+#body #text{
+    text-align: center;
+    padding-top: 50px;
+
+}
+#body #text h1{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 35px;
+}
+
+.form {
+    margin:10% auto;
+    width:300px;
+
+}
+.form form {
+    margin:20% auto;
+    width:300px;
+
+}
+.form input{
+
+    margin-bottom: 10px;
+    padding:10px;
+    width: 100%;
+    border:1px solid #CCC;
+    direction: rtl;
+}
+
+button [type="submit"]{
+    padding:10px;
+    width:100%;
+    float: right;
+}
+
+
+@media screen and (max-width: 980px) {
+    html ,body{
+
+        width: 100%;
+        height:100%;
+        margin: 0;
+        padding: 0;
+    }
+    #body #text h1{
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 35px;
+    }
+    .form {
+        width:100%;
+    }
+    form {
+        width:auto;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    .form input{
+        height: 100px;
+        width: 100%;
+        font-size: 30px; 
+        font-weight: bold;
+    }
+    #main{
+        margin:0;
+        width: 100%;
+        padding: 0;
+
+
+    }
+    .head {
+        height: 300px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #main .head p{
+        margin-top: 10%;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .head t{
+        font-size: 35px;
+    }
+    .head button{
+        font-size: 20px;
+        width: 150px;
+        height: 60px;
+        font-weight: bold;   
+    }
+    #search{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+    #search input{
+        height: 50px;
+        margin-top:180px;
+        float: right;
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+    #search button{
+        width: 60px;
+        height: 50px;
+        font-size: 20px;
+        margin-top:180px;
+        float: right;
+        font-weight: bold;
+    }
+    #search span{
+
+        font-size: 20px;
+        margin-top:200px;
+        float: right;
+        font-weight: bold;
+    }
+    .footer{
+        width: 100%;
+        margin:0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    html ,body{
+
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height:100%;
+    }
+    #main{
+        margin:0;
+        width: 100%;
+        padding: 0;
+    }
+    #body #text h1{
+
+        font-size: 40px;
+        font-weight: bold;
+
+        line-height: 35px;
+    }
+    .form {
+
+        width:100%;
+
+    }
+    form {
+        width:auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-weight: bold;
+        font-size: 35px;
+    }
+    .form input{
+        height: 100px;
+        width: 100%;
+        font-size: 35px; 
+        font-weight: bold;
+    }
+    .head {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+    .footer{
+        width: 100%;
+
+        margin:0;
+
+
+    }
+    #slider{
+        width: 100%;
+        margin: 0;
+    }
+    #imgs img 
+    {
+
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        left: 0;
+
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    html ,body{
+
+        width:100%;
+        margin:0;
+        padding:0;
+        height:100%;
+    }
+    #main{
+        padding: 0;
+        margin:0;
+        width: 100%;
+
+    }
+    #body #text h1{
+
+        font-size: 40px;
+        font-weight: bold;
+
+        line-height: 35px;
+    }
+    .form {
+
+        width:100%;
+
+    }
+    form {
+        width:auto;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    .form input{
+        height: 100px;
+        width: 100%;
+        font-size: 30px; 
+        font-weight: bold;
+    }
+    .head {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+    .footer{
+        width: 100%;
+        padding: 0;
+        margin-right: 5%;
+
+
+    }
+    #slider{
+        width: 100%;
+        margin: 0;
+    }
+    #imgs img 
+    {
+
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        left: 0;
+
+    }
+
+}
